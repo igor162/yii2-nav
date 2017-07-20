@@ -250,7 +250,8 @@ HTML;
 
         // Вывод тэга <small /> с указанным сообщением
         if (!empty($this->dataHeaderSmall)) {
-            $dataUser .= Html::tag("small", Html::encode($this->dataHeaderSmall));
+//            $dataUser .= Html::tag("small", Html::encode($this->dataHeaderSmall));
+            $dataUser .= Html::tag("small", $this->dataHeaderSmall);
         }
 
         // Вывод блока "panelBody"
